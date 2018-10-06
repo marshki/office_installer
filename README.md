@@ -32,7 +32,7 @@ Grab the script from `/src` in this repository, then, with elevated privileges, 
 
 ## TODO 
 
-[ ] - Add FYI on how to bundle package pre-tar
+-[ ] Add FYI on how to bundle package pre-tar
 
 ## History 
 
