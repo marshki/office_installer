@@ -32,8 +32,6 @@ Grab the script from `/src` in this repository, then, with elevated privileges, 
 
 ## TODO 
 
-[  ] - Check disk space function 
-
 [ ] - Add FYI on how to bundle package pre-tar
 
 ## History 
