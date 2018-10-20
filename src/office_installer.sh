@@ -32,7 +32,7 @@ fi
 # Is there adequate disk space in "/Applications"? If not, exit.
 
 check_disk_space () {
-	if [ "$(df -lk /Applications |awk 'FNR == 2 {print $4}')" -le "7717519" ]; then
+  if [ "$(df -lk /Applications |awk 'FNR == 2 {print $4}')" -le "7717519" ]; then
     printf "%s\\n" "ERROR: NOT ENOUGH FREE DISK SPACE. EXITING." >&2
     exit 1
 fi
@@ -109,7 +109,7 @@ office_installer () {
 
 main () {
   sanity_checks
-  #office_installer
+  office_installer
 }
 
 main "$@"
