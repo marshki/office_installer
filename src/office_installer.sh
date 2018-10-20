@@ -13,7 +13,7 @@ LOCAL_WEB="128.122.112.23"
 
 OFFICE=(
 Office2016
-"www.cns.nyu.edu/mac/.local/office2016.tgz"
+"localweb.cns.nyu.edu/mac/.local/office2016.tgz"
 )
 
 #######################
@@ -32,7 +32,7 @@ fi
 # Is there adequate disk space in "/Applications"? If not, exit.
 
 check_disk_space () {
-  if [ "$(df -lk /Applications |awk 'FNR == 2 {print $4}' |sed 's/G//')" -le "7717519.3" ]; then
+	if [ "$(df -lk /Applications |awk 'FNR == 2 {print $4}')" -le "7717519" ]; then
     printf "%s\\n" "ERROR: NOT ENOUGH FREE DISK SPACE. EXITING." >&2
     exit 1
 fi
