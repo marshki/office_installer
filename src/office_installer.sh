@@ -95,7 +95,7 @@ remove_office_tar () {
   printf "%s\\n" "REMOVING ${OFFICE[0]} TARBALL..."
 
   rm -rv /Applications/office.app.tgz
-  }
+}
 
 office_installer () {
   get_office
