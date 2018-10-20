@@ -109,7 +109,7 @@ office_installer () {
 
 main () {
   sanity_checks
-  office_installer
+  #office_installer
 }
 
 main "$@"
