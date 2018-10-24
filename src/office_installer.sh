@@ -49,14 +49,15 @@ fi
 
 # Is CNS local web available? If not, exit. (Will devise a diff test for this). 
 
-ping_local_web() {
-  printf "%s\\n" "PINGING CNS LOCAL WEB..."
+local_web_check(){
+  local status_code=$(curl --output /dev/null --silent --head --write-out '%{http_code}\n' "$LOCAL_WEB")
 
-  if ping -c 1 "$LOCAL_WEB" &> /dev/null; then
-    printf "%s\\n" "CNS LOCAL WEB IS REACHABLE. CONTINUING..."
-  else
+  if [ $status_code -ne "200" ] ; then
     printf "%s\\n" "ERROR: CNS LOCAL WEB IS NOT REACHABLE. EXITING." >&2
-    exit 1
+    exit 1 
+
+  else
+    printf "%s\\n" "CNS LOCAL WEB IS REACHABLE. CONTINUING..."
 fi
 }
 
@@ -64,10 +65,8 @@ sanity_checks() {
   root_check
   check_disk_space
   curl_check
-  # ping_local_web
+  local_web_check
 }
-
-sanity_checks
 
 ##########################
 #### Office Install-r ####
