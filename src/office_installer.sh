@@ -9,7 +9,7 @@
 #### Requires: root privileges; access to Meyer network; adequate free disk space.   ####
 #########################################################################################
 
-LOCAL_WEB="128.122.112.23"
+LOCAL_WEB="localweb.cns.nyu.edu/mac/.local/office2016.tgz"
 
 OFFICE=(
 Office2016
