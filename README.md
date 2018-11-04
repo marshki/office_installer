@@ -14,6 +14,23 @@ Written and tested to run on currently-supported versions of Mac OS X.
 
 ## Getting Started 
 
+
+**For sysadmins who want to replicate this process**, we assume that you:
+
+- [ ] are affiliated with an institution that has a valid license agreement with Microsoft;  
+
+- [ ] can access a networked file server; and
+
+- [ ] deployed Office 2016 locally on a Mac OS X client.
+
+On your local client, tar up the Office install with, e.g.:
+
+`tar czf word.tgz Microsoft\ Word.app/`
+
+and place the file on your web server for distribution.
+
+**For sysadmins AND end users:**
+
 __Pre-flight checklist__ (the script will check for the following conditions):
  
   * root privileges  
@@ -31,8 +48,6 @@ Grab the script from `/src` in this repository, then, with elevated privileges, 
 * `sudo bash office_installer.sh`.  
 
 ## TODO 
-
-- [ ] Add FYI on how to bundle package pre-tar
 
 ## History 
 
