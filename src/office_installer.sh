@@ -2,12 +2,10 @@
 # mjk235 [at] nyu [dot] edu --2018.09.08
 # v.0.1
 
-#########################################################################################
 #### Auto-magically install a subset of MSFT. Office 2016 on OS X. 		     ####
 #### Open to members of NYU's: Center for Brain Imaging, Center for Neural Science,  ####
 #### and Department of Psychology.                                                   ####
 #### Requires: root privileges; access to Meyer network; adequate free disk space.   ####
-#########################################################################################
 
 LOCAL_WEB="localweb.cns.nyu.edu/mac/.local/office2016.tgz"
 
@@ -16,9 +14,7 @@ Office2016
 "localweb.cns.nyu.edu/mac/.local/office2016.tgz"
 )
 
-#######################
 #### Sanity Checks ####
-#######################
 
 # Is current UID 0? If not, exit.
 
@@ -50,9 +46,10 @@ fi
 # Is CNS local web available? If not, exit. (Will devise a diff test for this). 
 
 local_web_check(){
-  local status_code=$(curl --output /dev/null --silent --head --write-out '%{http_code}\n' "$LOCAL_WEB")
+  local status_code
+  status_code=$(curl --output /dev/null --silent --head --write-out '%{http_code}\n' "$LOCAL_WEB")
 
-  if [ $status_code -ne "200" ] ; then
+  if [ "$status_code" -ne "200" ] ; then
     printf "%s\\n" "ERROR: CNS LOCAL WEB IS NOT REACHABLE. EXITING." >&2
     exit 1 
 
@@ -68,9 +65,7 @@ sanity_checks() {
   local_web_check
 }
 
-##########################
 #### Office Install-r ####
-##########################
 
 # Download tarball to /Applications.
 
@@ -102,9 +97,7 @@ office_installer () {
   remove_office_tar
 }
 
-##############
 #### Main ####
-##############
 
 main () {
   sanity_checks
