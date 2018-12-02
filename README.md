@@ -43,9 +43,9 @@ __Pre-flight checklist__ (the script will check for the following conditions):
 
 __Liftoff:__
 
-Grab the script from `/src` in this repository, then, with elevated privileges, call the script:  
+Grab the script from `/src` in this repository, then call the script (*[caffeinate](https://ss64.com/osx/caffeinate.html) will keep the computer awake during installation*):  
 
-* `sudo bash office_installer.sh`.  
+* `caffeinate -i sudo bash office_installer.sh`.  
 
 ## TODO 
 
