@@ -12,8 +12,9 @@ and [Department of Psychology](http://www.psych.nyu.edu/psychology.html) on the 
 
 Written and tested to run on currently-supported versions of Mac OS X.
 
-## Getting Started 
+## E-Z Install
 
+## Getting Started 
 
 **For sysadmins who want to replicate this process**, we assume that you:
 
