@@ -49,8 +49,6 @@ Grab the script from `/src` in this repository, then call the script (*[caffeina
 
 * `caffeinate -i sudo bash office_installer.sh`.  
 
-## TODO 
-
 ## History 
 
 Initial commit 2018.09.08 
