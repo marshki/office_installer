@@ -102,9 +102,9 @@ office_installer () {
   remove_office_tar
 }
 
-======
+#======
 # Main
-======
+#======
 
 main () {
   sanity_checks
