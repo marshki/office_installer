@@ -12,6 +12,8 @@ and [Department of Psychology](http://www.psych.nyu.edu/psychology.html) on the 
 
 Written and tested to run on currently-supported versions of Mac OS X.
 
+**NYU moved to an Office 365 subscription-based model in November of 2017.**
+
 ## E-Z Install
 **OS X:** `curl https://raw.githubusercontent.com/marshki/office_installer/master/src/office_installer.sh | caffeinate sudo bash` 
 
